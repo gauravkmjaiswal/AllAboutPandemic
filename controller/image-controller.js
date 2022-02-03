@@ -7,7 +7,7 @@ conn.once('open',()=>{
     gfs=grid(conn.db,mongoose.mongo)
     gfs.collection('fs')
 })
-const url=`http://localhost:8000`
+const url=`https://allaboutpandemic.herokuapp.com/`
 
 export const uploadImage=(request,response)=>{
     try{
