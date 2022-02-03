@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL=""
+const URL="https://allaboutpandemic.herokuapp.com/"
 
 export const createPost=async(post)=> {
    try{
