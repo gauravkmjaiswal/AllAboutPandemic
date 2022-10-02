@@ -1,7 +1,7 @@
 import grid from 'gridfs-stream';
 import mongoose from 'mongoose';
 
-const url = 'https://allaboutpandemic21.herokuapp.com/';
+const url = '';
 
 
 let gfs, gridfsBucket;
