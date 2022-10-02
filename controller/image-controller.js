@@ -1,7 +1,7 @@
 import grid from 'gridfs-stream';
 import mongoose from 'mongoose';
 
-const url = '';
+const url = 'https://all-about-pandemic-2-lgabb10wy-gauravkmjaiswal.vercel.app/';
 
 
 let gfs, gridfsBucket;
