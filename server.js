@@ -28,5 +28,5 @@ const password = process.env.DB_PASSWORD;
 
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
 
-const URL = process.env.MONGODB_URI || `mongodb+srv://${username}:${codeforinterview}@allaboutpendemic.asqmc.mongodb.net/AllAboutPendemic?retryWrites=true&w=majority`;
+const URL = process.env.MONGODB_URI || `mongodb+srv://${username}:${password}@allaboutpendemic.asqmc.mongodb.net/AllAboutPendemic?retryWrites=true&w=majority`;
 Connection(URL);
