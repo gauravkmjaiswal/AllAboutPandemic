@@ -14,6 +14,9 @@ app.use(cors());
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', Router);
+app.get('/',(req,res)=>{
+    res.send("ok bro")
+})
 
 
 if(process.env.NODE_ENV=='production')
