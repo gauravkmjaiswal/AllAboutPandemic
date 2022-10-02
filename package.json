@@ -1,11 +1,11 @@
 {
-  "name": "server",
+  "name": "app",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "node app.js",
     "client-install": "cd client && npm install",
     "client-build": "cd client && npm run build",
     "build": "npm run client-install && npm run client-build"
