@@ -19,7 +19,7 @@ export const uploadImage = (request, response) => {
     if(!request.file) 
         return response.status(404).json("File not found");
     
-    const imageUrl = `https://all-about-pandemic-2-lgabb10wy-gauravkmjaiswal.vercel.app/file/${request.file.filename}`;
+    const imageUrl = `${url}/file/${request.file.filename}`;
     console.log(imageUrl)
     response.status(200).json(imageUrl);    
 }
