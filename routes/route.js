@@ -8,6 +8,9 @@ import { authenticateToken, createNewToken } from '../controller/jwt-controller.
 
 import upload from '../utils/upload.js';
 
+import { urlcheck } from '../controller/ANT/check-controller.js'
+
+
 const router = express.Router();
 
 router.post('/login', loginUser);
@@ -29,5 +32,10 @@ router.get('/file/:filename', getImage);
 router.post('/comment/new',authenticateToken, newComment);
 router.get('/comments',authenticateToken, getComments);
 router.delete('/comment/delete',authenticateToken, deleteComment);
+
+
+
+router.get('/ANT/check',urlcheck)
+
 
 export default router;
